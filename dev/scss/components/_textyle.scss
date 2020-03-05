@@ -1,0 +1,51 @@
+/* =============
+    Textyle
+============= */
+
+
+// body {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+p.desc {
+  transition: 1s 1.5s;
+}
+
+
+/*code sample from here*/
+/*
+[required code]
+parent {
+  opacity: 0;
+  perspective: xxx; //3d effective dose
+}
+parent span {
+  //flip effect
+  transform : rotateY(xxxdeg);  //you can also use 'rotateX' together.
+	(transform-origin : xxx;) //If you want.
+  //fade effect
+  opacity: 0;
+}
+*/
+
+.ex1 {
+  opacity: 0;
+  perspective: 200px;
+}
+.ex1 span {
+  transform: rotateY(-90deg);
+  opacity: 0;
+}
+
+.ex2 {
+  opacity: 0;
+  perspective: 200px;
+}
+.ex2 span {
+  transform: rotateY(-90deg) rotateX(45deg);
+  transform-origin: 0% 75%;
+  opacity: 0;
+}
